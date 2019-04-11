@@ -1,5 +1,6 @@
 package com.example.testapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -25,6 +26,8 @@ public class HomePage extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                startActivity(new Intent(HomePage.this,Nav_Activity.class));
+                finish();
             }
         });
     }
